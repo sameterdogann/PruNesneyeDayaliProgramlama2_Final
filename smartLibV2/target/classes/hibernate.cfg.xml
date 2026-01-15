@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="connection.driver_class">org.sqlite.JDBC</property>
+        <property name="connection.url">jdbc:sqlite:smartlibrary.db</property>
+        
+        <property name="dialect">org.hibernate.community.dialect.SQLiteDialect</property>
+
+        <!-- Disable Hibernate printing raw SQL to the console; logging framework will handle messages -->
+        <property name="show_sql">false</property>
+        <property name="format_sql">false</property>
+
+        <property name="hbm2ddl.auto">update</property>
+
+        <mapping class="com.smartlibrary.entity.Book"/>
+        <mapping class="com.smartlibrary.entity.Student"/>
+        <mapping class="com.smartlibrary.entity.Loan"/>
+    </session-factory>
+</hibernate-configuration>
