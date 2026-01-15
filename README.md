@@ -70,8 +70,6 @@ java -cp target\classes;target\dependency\* com.smartlibrary.app.Main
 - pom.xml içinde `org.slf4j:slf4j-simple` eklendi; bu sayede "Failed to load class org.slf4j.impl.StaticLoggerBinder" uyarısı ortadan kalkmalıdır.  
 - show_sql yerine log seviyesi veya hibernate.cfg.xml'de `show_sql=false` kullanıldı; ham SQL konsolda gösterilmeyecektir.
 
-## LazyInitializationException (Ödünç Listeleme Sorunu)
-- Ödünç listesi (option 6) sırasında görülen LazyInitializationException, `LoanDao` içinde ilişkili `Student` ve `Book` verilerini oturum açıkken almak için `join fetch` kullanılarak düzeltildi. Eğer hâlâ benzer hata alıyorsanız, DAO sorgularının join-fetch içerdiğini kontrol edin.
 
 ## Veritabanı
 - Uygulama çalıştığında proje kökünde otomatik oluşturulur: `smartlibrary.db`  
