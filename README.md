@@ -1,4 +1,4 @@
-# SmartLibraryPlus
+# SmartLibV2
 Java • Hibernate (JPA) • SQLite • Maven • Konsol Uygulaması
 
 ##  Proje Sahibi
@@ -18,7 +18,7 @@ Java • Hibernate (JPA) • SQLite • Maven • Konsol Uygulaması
 - ****Teslim Tarihi:**** 15/01/2026
 
 ## Kısa Açıklama
-SmartLibraryPlus, Java + Hibernate (JPA) + SQLite kullanan konsol tabanlı bir kütüphane yönetim uygulamasıdır. CRUD, ödünç verme/iade, DAO katmanı ve temel OOP yapıları içerir.
+SmartLibV2, Java + Hibernate (JPA) + SQLite kullanan konsol tabanlı bir kütüphane yönetim uygulamasıdır. CRUD, ödünç verme/iade, DAO katmanı ve temel OOP yapıları içerir.
 
 ## Özellikler
 - Kitap işlemleri: ekle, listele, güncelle, sil  
